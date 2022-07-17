@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #000b0f;
+}
+
+body{
+    font-family: 'Roboto', sans-serif ;
+    font-size: 36px;
+    font-weight: 100;
+    background: #7853a7;
+    text-align: end;
+    padding-top: 80px;
+    background-image: url(/files/img/cosmos-5809271.png);
+    background-attachment:fixed ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    max-width: 375px;
+    margin: 0 auto;
+}
+
+.calculadora{
+    box-shadow: 0px 4ºx 10px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    background: #fff;
+}
+
+input {
+    display: grid;
+    width: 64px;
+    height: 64px;
+    justify-content: center;
+    align-items: center;
+    background: #d8c8e3;
+    border-radius: 50%;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    font-size: 36px;
+    outline: none;
+    transition: 0.3s;
+    position: relative;
+}
+
+input:hover {
+    background: rosybrown;
+}
+
+input:hover.operadores-basicos{
+    background: #eff6ee;
+}
+
+.resultado{
+    position: relative;
+}
+
+.resultado input[type='text']{
+    min-height: 250px;
+    width: 375px;
+    border: none;
+    outline: none;
+    background: #d2e8de5a;
+    display: grid;
+    text-align: end;
+    font-size: 36px;
+    font-weight: 100;
+    font-family: 'Roboto', sans-serif;
+    justify-content: end;
+    align-items: end;
+    padding: 30px 20px 0 0;
+    border-radius: 20px 20px 0 0;
+}
+
+#igual:hover{
+    background: rgb(183, 132, 132);
+}
+
+.teclas {
+    display: grid;
+    grid-template-columns: 60px 60px 60px 60px;
+    justify-content: center;
+    gap: 36px;
+    margin-top: 36px;
+    padding-bottom: 36px;
+}
+
+input.operadores-basicos{
+    background: #e5e5e5;
+}
+
+#igual{
+    background: #e99841;
+}
+
+#del{
+    font-size: 20px;
+}
